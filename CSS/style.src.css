@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+    nav, nav ul{
+        @apply bg-navy-blue flex flex-row  sm:items-center sm:justify-between text-white;
+    }
+    nav ul > li{
+        @apply mx-5 font-bold hover:bottom-decoration;
+    }
+    figcaption{
+        @apply text-center font-bold text-2xl underline hover:text-green-500 cursor-wait line-clamp-1;
+    }
+    #past-event p {
+        @apply line-clamp-3 w-75 mx-auto text-center mt-3
+    }
+    #category-post p{
+        @apply text-lg line-clamp-4 mt-3 p-1
+    }
+    #school-environment img{
+        @apply  object-cover flex-img
+    }
+    video,
+    img{
+        @apply rounded-xl
+    }
+    a[href^="#"]{
+        margin: 0; 
+        padding:0;
+        color:inherit !important;
+        text-decoration: inherit !important;
+    }
+}
+@layer utilities{
+    .bottom-decoration{
+        text-decoration-line: underline;
+        text-decoration-color: #111177;
+        text-decoration-thickness: 3px;
+        color: #47ff47;
+    }
+    .home{
+        background-image: linear-gradient(to bottom , #000000d7 , #00000013), url("https://images.unsplash.com/photo-1710845423266-f6396cc06c03?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2Nob29sc3xlbnwwfHwwfHx8MA%3D%3D");
+        background-position: center;
+        background-size: cover;
+        height: 70vh;
+        color: white;
+        text-align: center;
+    }
+    .flex-img{
+        width:350px;
+        max-width: 100%;
+    }
+}
