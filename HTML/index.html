@@ -17,18 +17,45 @@
       crossorigin="anonymous"
       defer
     ></script>
-    <script src="https://kit.fontawesome.com/2d534fe138.js" crossorigin="anonymous" defer></script>
+    <script
+      src="https://kit.fontawesome.com/2d534fe138.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </head>
   <body>
     <!-- HEADER SECTION -->
     <header>
-      <nav class=" p-3 mx-auto">
+      <nav class="p-3 mx-auto">
         <h1 class="font-bold text-4xl">U.N.I.X</h1>
-          <ul class="sm:my-auto items-end flex-wrap">
-            <li class="text-xl cursor-pointer"><a href="#home">HOME</a></li>
-            <li class="text-xl cursor-pointer"><a href="#post">POST</a></li>
-            <li class="text-xl cursor-pointer"><a href="#news">NEWS</a></li>
-            <li class="text-xl cursor-pointer"><a href="#subscribe">SUBCRIBE</a></li>
+        <ul class="sm:my-auto">
+          <li class="text-xl cursor-pointer"><a href="#home">HOME</a></li>
+          <li class="text-xl cursor-pointer"><a href="#post">POST</a></li>
+          <li class="text-xl cursor-pointer"><a href="#news">NEWS</a></li>
+          <li class="text-xl cursor-pointer">
+            <a href="#subscribe">SUBCRIBE</a>
+          </li>
+        </ul>
+        <button
+          class="btn btn-success d-sm-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#canvas"
+        >
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <div
+          class="offcanvas offcanvas-sm offcanvas-end w-50 m-0 !bg-blue-700"
+          id="canvas"
+        >
+        <div class="offcanvas-header">
+            <button class="btn-close btn-danger ms-auto" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <ul class="text-2xl">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#post">POST</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#subscribe">SUBCRIBE</a></li>
           </ul>
         </div>
       </nav>
@@ -150,68 +177,93 @@
           </div>
         </article>
         <!-- Recent Post/ School Environment -->
-         <div class="bg-yellow-100" >
-             <h3 class="text-center text-2xl font-bold hover:underline hover:decoration-green-600 hover:text-green-600">ABOUT US</h3>
-             <p class="text-center font-extrabold underline">Our pictures speak for us</p>
-            <article class="flex flex-wrap gap-3 py-3  justify-center" id="school-environment">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1680807869780-e0876a6f3cd5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D"
-                alt=""
-                class=""
-              />
-              <img
-                src="https://plus.unsplash.com/premium_photo-1683167306255-e18aa6365a9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D"
-                alt=""
-                class=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D"
-                alt=""
-                class=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c2Nob29sfGVufDB8fDB8fHww"
-                alt=""
-                class=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVhY2hlcnxlbnwwfHwwfHx8MA%3D%3D"
-                alt=""
-                class=""
-              />
-              <img
-                src="https://plus.unsplash.com/premium_photo-1670808336531-ed6bfe071394?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3BvcnQlMjBncm91bmclMjBvZiUyMGElMjBzY2hvb2x8ZW58MHx8MHx8fDA%3D"
-                alt=""
-                class=""
-              />
-              <img
-                src="https://plus.unsplash.com/premium_photo-1709247069718-dde5629511cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c3BvcnQlMjBncm91bmclMjBvZiUyMGElMjBzY2hvb2x8ZW58MHx8MHx8fDA%3D"
-                alt=""
-                class=""
-              />
-            </article>
-         </div>
+        <div class="bg-yellow-100">
+          <h3
+            class="text-center text-2xl font-bold hover:underline hover:decoration-green-600 hover:text-green-600"
+          >
+            ABOUT US
+          </h3>
+          <p class="text-center font-extrabold underline">
+            Our pictures speak for us
+          </p>
+          <article
+            class="flex flex-wrap gap-3 py-3 justify-center"
+            id="school-environment"
+          >
+            <img
+              src="https://plus.unsplash.com/premium_photo-1680807869780-e0876a6f3cd5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D"
+              alt=""
+              class=""
+            />
+            <img
+              src="https://plus.unsplash.com/premium_photo-1683167306255-e18aa6365a9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D"
+              alt=""
+              class=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D"
+              alt=""
+              class=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c2Nob29sfGVufDB8fDB8fHww"
+              alt=""
+              class=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVhY2hlcnxlbnwwfHwwfHx8MA%3D%3D"
+              alt=""
+              class=""
+            />
+            <img
+              src="https://plus.unsplash.com/premium_photo-1670808336531-ed6bfe071394?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3BvcnQlMjBncm91bmclMjBvZiUyMGElMjBzY2hvb2x8ZW58MHx8MHx8fDA%3D"
+              alt=""
+              class=""
+            />
+            <img
+              src="https://plus.unsplash.com/premium_photo-1709247069718-dde5629511cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c3BvcnQlMjBncm91bmclMjBvZiUyMGElMjBzY2hvb2x8ZW58MHx8MHx8fDA%3D"
+              alt=""
+              class=""
+            />
+          </article>
+        </div>
       </section>
       <!-- Newsletter Form Section -->
-      <section id="Newsletter-form" class="bg-wine p-5 rounded-ss-xl rounded-se-lg text-white">
-        <h1 class="text-center" >Subscribe To Our Newsletter</h1>
-        <p  class="text-center">BE THE FIRST TO KNOW WHAT'S HAPPENING</p>
+      <section
+        id="Newsletter-form"
+        class="bg-wine p-5 rounded-ss-xl rounded-se-lg text-white"
+      >
+        <h1 class="text-center">Subscribe To Our Newsletter</h1>
+        <p class="text-center">BE THE FIRST TO KNOW WHAT'S HAPPENING</p>
         <form action="" id="subscribe">
-            <input type="email" required class="w-full sm:w-3/4 p-2 text-black focus:outline-none focus:ring-yellow-300 focus:ring" placeholder="Email">
-            <button class="w-full mt-3 bg-white p-2 sm:px-6 rounded sm:mx-2 sm:w-auto text-wine hover:text-white hover:!bg-wine hover:ring hover:ring-white">SUBMIT</button>
+          <input
+            type="email"
+            required
+            class="w-full sm:w-3/4 p-2 text-black focus:outline-none focus:ring-yellow-300 focus:ring"
+            placeholder="Email"
+          />
+          <button
+            class="w-full mt-3 bg-white p-2 sm:px-6 rounded sm:mx-2 sm:w-auto text-wine hover:text-white hover:!bg-wine hover:ring hover:ring-white"
+          >
+            SUBMIT
+          </button>
         </form>
       </section>
     </main>
     <!-- FOOTER SECTION -->
     <footer class="bg-wine rounded-es-lg rounded-ee-lg px-5 py-1">
-        <p class="text-xl text-white inline">Follow us at:
-            <i class="fa-brands mx-2 fa-facebook"></i>
-            <i class="fa-brands mx-2 fa-instagram"></i>
-            <i class="fa-brands mx-2 fa-twitter"></i>
-        </p>
-        <p class="text-xl  text-white">
-            Email us: <a href="" class="text-white hover:!text-navy-blue">username@gmail.com</a>
-        </p>
+      <p class="text-xl text-white inline">
+        Follow us at:
+        <i class="fa-brands mx-2 fa-facebook"></i>
+        <i class="fa-brands mx-2 fa-instagram"></i>
+        <i class="fa-brands mx-2 fa-twitter"></i>
+      </p>
+      <p class="text-xl text-white">
+        Email us:
+        <a href="" class="text-white hover:!text-navy-blue"
+          >username@gmail.com</a
+        >
+      </p>
     </footer>
   </body>
 </html>

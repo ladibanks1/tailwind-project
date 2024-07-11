@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 @layer base{
-    nav, nav ul{
-        @apply bg-navy-blue flex flex-row  sm:items-center sm:justify-between text-white;
+    nav > ul{
+        @apply hidden
+    }
+    nav ul{
+        @apply  sm:flex sm:flex-row   sm:items-center sm:justify-between text-white;
+    }
+    nav{
+        @apply bg-navy-blue flex flex-row   items-center justify-between text-white;
     }
     nav ul > li{
         @apply mx-5 font-bold hover:bottom-decoration;

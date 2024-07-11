@@ -17,7 +17,10 @@ module.exports = {
      spacing:{
         "50" : "50%",
         "75" : "75%"
-     }
+     },
+    screens: {
+      "sm": "600px",
+    }
     },
   },
   plugins: [],
